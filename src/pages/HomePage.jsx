@@ -303,10 +303,10 @@ export default function HomePage({
             ))}
           </div>
 
-          <div className="text-center mt-4">
+          <div className="text-center mt-3">
             <button 
               onClick={() => onNavigate('visits')}
-              className="btn btn-secondary"
+              className="btn btn-secondary session-view-all-btn"
             >
               <span>View All Training Modules & Booking Details</span>
               <ChevronRight size={16} />
@@ -582,9 +582,9 @@ export default function HomePage({
               <div className="club-banner-action mt-3">
                 <button 
                   onClick={onOpenClubModal}
-                  className="btn btn-primary btn-lg"
+                  className="btn btn-primary club-claim-btn"
                 >
-                  <Sparkles size={18} />
+                  <Sparkles size={15} />
                   <span>Claim KES 100 Voucher & Free PDF Guide</span>
                 </button>
               </div>
