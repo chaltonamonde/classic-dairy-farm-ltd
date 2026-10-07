@@ -255,6 +255,10 @@ export default function HomePage({
             </p>
           </div>
 
+          <div className="mobile-shelf-indicator">
+            <span>👈 Swipe sideways to see all 3 programs 👉</span>
+          </div>
+
           <div className="sessions-overview-grid">
             {VISIT_SESSIONS.map(session => (
               <div key={session.id} className="card session-feature-card">
@@ -328,26 +332,32 @@ export default function HomePage({
           <div className="how-it-works-grid">
             <div className="step-card">
               <div className="step-number-bubble">1</div>
-              <h3 className="step-card-title">Choose Item or Date</h3>
-              <p className="step-card-desc">
-                Select your required chilled milk liters, silage bales, or preferred Saturday masterclass date on this site.
-              </p>
+              <div className="step-card-text">
+                <h3 className="step-card-title">Choose Item or Date</h3>
+                <p className="step-card-desc">
+                  Select your required chilled milk liters, silage bales, or preferred Saturday masterclass date on this site.
+                </p>
+              </div>
             </div>
 
             <div className="step-card">
               <div className="step-number-bubble">2</div>
-              <h3 className="step-card-title">Confirm via M-Pesa or WhatsApp</h3>
-              <p className="step-card-desc">
-                Receive an instant pre-filled order on WhatsApp or initiate automated M-Pesa reservation with zero guesswork.
-              </p>
+              <div className="step-card-text">
+                <h3 className="step-card-title">Confirm via M-Pesa or WhatsApp</h3>
+                <p className="step-card-desc">
+                  Receive an instant pre-filled order on WhatsApp or initiate automated M-Pesa reservation with zero guesswork.
+                </p>
+              </div>
             </div>
 
             <div className="step-card">
               <div className="step-number-bubble">3</div>
-              <h3 className="step-card-title">Fresh Delivery or Farm Arrival</h3>
-              <p className="step-card-desc">
-                Collect at our Nkubu farm gate, receive morning town transit, or arrive on-site with directions in hand.
-              </p>
+              <div className="step-card-text">
+                <h3 className="step-card-title">Fresh Delivery or Farm Arrival</h3>
+                <p className="step-card-desc">
+                  Collect at our Nkubu farm gate, receive morning town transit, or arrive on-site with directions in hand.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -431,6 +441,10 @@ export default function HomePage({
             <p className="section-subtitle">
               Rated 4.7 out of 5.0 across 23 reviews on Google Maps. Here is what real farmers and customers in Meru share:
             </p>
+          </div>
+
+          <div className="mobile-shelf-indicator">
+            <span>👈 Swipe sideways to read all 4 reviews 👉</span>
           </div>
 
           <div className="reviews-cards-grid">
