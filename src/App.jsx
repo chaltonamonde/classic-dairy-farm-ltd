@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 import { PRODUCTS, VISIT_SESSIONS, FARM_INFO } from './data/farmData';
+import { Analytics } from '@vercel/analytics/react';
 
 // Shared Components
 import Navbar from './components/Navbar';
@@ -291,6 +292,9 @@ export default function App() {
         onOpenPolicyModal={(policy) => setActivePolicy(policy)}
         onOpenReviewModal={() => setIsReviewModalOpen(true)}
       />
+
+      {/* Vercel Web Analytics */}
+      <Analytics />
     </div>
   );
 }
